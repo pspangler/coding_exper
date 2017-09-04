@@ -5,7 +5,7 @@
     https://www.meetup.com/tech-interviews-and-competitive-programming/events/242986801/
 """
 
-from random import random
+import random
 
 class Node(object):
     """ A simple binary tree node. """
@@ -34,10 +34,10 @@ def make_random_tree(node, depth):
         binary tree with random integer values.
     """
     # randomValue is an integer
-    random_value = random() * 20
+    random_value = random.randint(0,90)
     node.data = "" + str(random_value)
     # maxDepth is likewise an integer
-    max_depth = (2 + random() * 3)
+    max_depth = (2 + random.random() * 3)
 
     # Stop when we get deep enough. (our halt condition)
     if depth > max_depth:
