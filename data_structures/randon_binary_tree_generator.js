@@ -5,7 +5,6 @@
 
 class Node {
 	 constructor(new_name) {
-         // console.log("Inside Node constructor. new name = " + new_name);
          this.name = new_name;
      }
 
